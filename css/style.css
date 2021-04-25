@@ -78,7 +78,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: #f1c76b;
 }
 
 .top-bar .logo {
@@ -158,7 +158,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: #f1c76b;
     transition: .3s;
 }
 
@@ -814,7 +814,7 @@ a:focus {
     margin: 45px 0;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../img/3.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -2300,6 +2300,15 @@ a:focus {
     .fact .fact-left h2 {
         color: #fdbe33;
     }
+
+    .top-bar .logo h1 {
+        margin: 0;
+        color: #030f27;
+        font-size: 30px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+    
     
     
 }
