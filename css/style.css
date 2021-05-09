@@ -78,7 +78,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #f1c76b;
+    background: white ;
 }
 
 .top-bar .logo {
@@ -158,7 +158,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #f1c76b;
+    background: white ;
     transition: .3s;
 }
 
@@ -190,14 +190,14 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: #FFFB33 ;
     transition: none;
 }
 
 .nav-bar .dropdown-menu {
     margin-top: 0;
     border: 0;
-    border-radius: 0;
+    border-radius: 20;
     background: #f8f9fa;
 }
 
@@ -209,8 +209,8 @@ a:focus {
 
 .nav-bar .btn:hover {
     color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: #FFFB33 ;
+    border-color: #FFFB33 ;
 }
 
 @media (min-width: 992px) {
@@ -235,6 +235,7 @@ a:focus {
         font-size: 15px;
         text-transform: uppercase;
     }
+    
 }
 
 @media (max-width: 991.98px) {
@@ -247,7 +248,12 @@ a:focus {
     }
     
     .nav-bar .dropdown-menu {
-        box-shadow: none;
+       visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
     }
     
     .nav-bar .btn {
@@ -410,6 +416,29 @@ a:focus {
     background: #030f27;
 }
 
+
+
+.page-header h4 {
+    position: relative;
+    color: #030f27;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.page-header h4::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: #030f27;
+}
+
+
+
 .page-header a {
     position: relative;
     padding: 0 12px;
@@ -417,20 +446,7 @@ a:focus {
     color: #030f27;
 }
 
-.page-header a:hover {
-    color: #ffffff;
-}
 
-.page-header a::after {
-    position: absolute;
-    content: "/";
-    width: 8px;
-    height: 8px;
-    top: -2px;
-    right: -7px;
-    text-align: center;
-    color: #121518;
-}
 
 .page-header a:last-child::after {
     display: none;
@@ -2056,8 +2072,8 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
-    padding-top: 90px;
+    margin-top: -7px;
+    padding-top: 12px;
     background: #030f27;
     color: #ffffff;
 }
@@ -2092,7 +2108,7 @@ a:focus {
     display: block;
     margin-bottom: 10px;
     color: #ffffff;
-    transition: .3s;
+    transition: .0s;
 }
 
 .footer .footer-link a::before {
@@ -2105,7 +2121,7 @@ a:focus {
 
 .footer .footer-link a:hover {
     color: #fdbe33;
-    letter-spacing: 1px;
+   
 }
 
 .footer .footer-contact p i {
@@ -2125,7 +2141,7 @@ a:focus {
     text-align: center;
     border: 1px solid rgba(256, 256, 256, .3);
     border-radius: 60px;
-    transition: .3s;
+    transition: 0s;
 }
 
 .footer .footer-social a i {
@@ -2167,7 +2183,7 @@ a:focus {
     background: #121518;
     border-radius: 0;
     border: 2px solid #fdbe33;
-    transition: .3s;
+    transition: 0s;
 }
 
 .footer .newsletter .btn:hover {
@@ -2312,3 +2328,23 @@ a:focus {
     
     
 }
+
+
+.m1{
+    height:1000%;
+    width:550%;
+}
+
+.mm2{
+    height:1000%;
+    width:580%;
+    margin-left: -200px;
+}
+
+.mm3{
+    height:800%;
+    width:680%;
+    margin-left: -200px;
+}
+
+
