@@ -190,7 +190,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #FFFB33 ;
+    color: #fdbe33;
     transition: none;
 }
 
@@ -209,8 +209,8 @@ a:focus {
 
 .nav-bar .btn:hover {
     color: #030f27;
-    background: #FFFB33 ;
-    border-color: #FFFB33 ;
+    background: #fdbe33;
+    border-color: #fdbe33;
 }
 
 @media (min-width: 992px) {
@@ -1247,6 +1247,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    
 }
 
 .blog .blog-item {
@@ -1254,6 +1255,10 @@ a:focus {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
+    border: 20px solid red;
+    border:2px solid #fff;
+    outline: 4px solid #fff;
+    outline-offset: -10px;
 }
 
 .blog .blog-img {
@@ -1308,7 +1313,11 @@ a:focus {
 .blog .blog-meta {
     position: relative;
     padding: 25px 0 10px 0;
-    background: #f3f6ff;
+    background: #fdbe33;
+    border-bottom: 1px dotted #d00;
+    border:2px solid #fff;
+    outline: 4px solid #fff;
+    outline-offset: -10px;
 }
 
 .blog .blog-meta::after {
@@ -1325,10 +1334,9 @@ a:focus {
     display: inline-block;
     margin: 0;
     padding: 0 3px;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
-    color: #666666;
+    margin: 0;
+    font-size: 16px;
+    color: black;
 }
 
 .blog .blog-meta p a {
@@ -1338,12 +1346,13 @@ a:focus {
 
 .blog .blog-text {
     padding: 10px 25px 25px 25px;
-    background: #f3f6ff;
+    background: #030f27;
 }
 
 .blog .blog-text p {
     margin: 0;
     font-size: 16px;
+    color: #f3f6ff;;
 }
 
 .blog .pagination .page-link {
@@ -2342,8 +2351,8 @@ a:focus {
 }
 
 .mm3{
-    height:800%;
-    width:680%;
+    height:700%;
+    width:480%;
     margin-left: -200px;
 }
 
