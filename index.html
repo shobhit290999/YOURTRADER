@@ -26,10 +26,755 @@
         <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
         <link href="css/style.css" rel="stylesheet">
         <style>
+            
+.latest-area.section-padding.blog-page {
+    padding: 100px 0;
+}
+
+.blog-page .single-latest-text {
+    height: auto;
+}
+
+.single-latest-text > h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.single-latest-text p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.single-latest-item {
+    overflow: hidden;
+    margin-bottom: 50px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+    .single-latest-item:hover {
+        box-shadow: 2px 5px 25px rgba(34, 30, 31, 0.25);
+    }
+
+    .single-latest-item.active {
+        box-shadow: 2px 5px 25px rgba(34, 30, 31, 0.25);
+    }
+
+.single-latest-image img {
+    width: 51%;
+}
+
+.single-latest-text > h3 a {
+    color: #000000;
+}
+
+    .single-latest-text > h3 a:hover {
+        color: #FFAE27;
+    }
+
+.single-latest-image a {
+    display: block;
+}
+
+.single-latest-text {
+    background: #f6f6f6 none repeat scroll 0 0;
+    overflow: hidden;
+    padding: 25px 35px 27px 25px;
+    height: 400px;
+}
+
+.single-latest-item .single-item-comment-view span {
+    margin-right: 13px;
+}
+
+.single-latest-item .single-item-comment-view {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.single-latest-item .button-default {
+    font-size: 14px;
+    margin-top: 7px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.single-latest-item:hover .button-default {
+    background: #FFAE27;
+    color: #fff;
+}
+/*----------------------------------------*/
+
+/*  8. Online Product Area
+/*----------------------------------------*/
+
+.single-product {
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.product-slider-active {
+    width: 100%;
+}
+
+.single-product:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.onsale {
+    background: #000000;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    height: 100px;
+    left: auto;
+    line-height: 162px;
+    min-height: auto;
+    min-width: auto;
+    position: absolute;
+    right: -50px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: none;
+    top: -50px;
+    width: 100px;
+    z-index: 2;
+    border-radius: 0;
+    -webkit-transform: rotate(45deg) translateZ(0) scale(1.0, 1.0);
+    transform: rotate(45deg) translateZ(0) scale(1.0, 1.0);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.product-action > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.product-content {
+    padding: 20px 15px 25px 15px;
+    text-align: center;
+}
+
+    .product-content > h2 > a {
+        color: #000;
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.35;
+    }
+
+        .product-content > h2 > a:hover {
+            color: #FFAE27;
+        }
+
+.product-price {
+    position: relative;
+}
+
+.price-box {
+    color: #555;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.single-product:hover .price-box {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.add-to-cart {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.single-product:hover .add-to-cart {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+.add-to-cart a {
+    background: transparent;
+    border: none;
+    color: #000;
+    display: inline-block;
+    float: left;
+    font-size: 11px;
+    font-weight: 500;
+    height: 30px;
+    letter-spacing: .2em;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 5px;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 0;
+}
+
+    .add-to-cart a:hover {
+        color: #FFAE27;
+    }
+/*----------------------------------------*/
+
+/*  9. Testimonial Area
+/*----------------------------------------*/
+
+.testimonial-area {
+    padding: 75px 0;
+    background: #f6f6f6 /*url(../img/banner/7.png)*/;
+    background-size: cover;
+    background-position: center center;
+}
+
+.single-testimonial-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 775px;
+}
+
+    .single-testimonial-area .testimonial-image {
+        vertical-align: top;
+        border-radius: 100%;
+        float: left;
+        width: 104px;
+        height: 104px;
+        border: 2px solid #FFAE27;
+        margin-top: 13px;
+    }
+
+        .single-testimonial-area .testimonial-image img {
+            width: auto;
+        }
+
+    .single-testimonial-area .testimonial-content {
+        overflow: hidden;
+        text-align: left;
+        padding-left: 98px;
+        position: relative;
+    }
+
+        .single-testimonial-area .testimonial-content:before {
+            content: "â€œ";
+            font-size: 100px;
+            color: #363636;
+            position: absolute;
+            left: 10px;
+            top: -4px;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1;
+        }
+
+.testimonial-content > p.author-desc {
+    margin: auto;
+    line-height: 28px;
+    padding: 15px 0;
+    color: #424242;
+    font-size: 14px;
+}
+
+.testimonial-content > p.testimonial-author {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    margin: 7px 0 0 0;
+}
+/*testimonial Style 2 CSS*/
+
+.single-testimonial.testimonial-style-2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(34, 30, 31, 0.25);
+    margin: 25px 10px;
+}
+
+    .single-testimonial.testimonial-style-2 .des-testimonial {
+        padding: 30px 40px 0 40px;
+        font-size: 14px;
+        line-height: 26px;
+        position: relative;
+    }
+
+        .single-testimonial.testimonial-style-2 .des-testimonial:before {
+            content: "â€œ";
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            font-size: 70px;
+        }
+
+    .single-testimonial.testimonial-style-2 .author-img {
+        float: right;
+        width: 80px;
+        position: relative;
+        top: -45px;
+        border: 5px solid #f5f5f5;
+        border-radius: 100%;
+        z-index: 9;
+    }
+
+    .single-testimonial.testimonial-style-2 .testimonial-author {
+        background: #f5f5f5f5;
+        padding: 20px 42px;
+        padding-bottom: 30px;
+    }
+
+    .single-testimonial.testimonial-style-2 .author-content {
+        overflow: hidden;
+    }
+
+        .single-testimonial.testimonial-style-2 .author-content p {
+            margin-bottom: 0;
+        }
+
+    .single-testimonial.testimonial-style-2 .author-img img {
+        width: 100%;
+        border-radius: 50%;
+    }
+/*----------------------------------------*/
+
+/*  10. Event Area
+/*----------------------------------------*/
+
+.single-event-image > a {
+    display: block;
+    position: relative;
+}
+
+.single-event-image > span {
+    background: #000000 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 96px;
+    left: 0;
+    position: absolute;
+    width: 96px;
+}
+
+.single-event-image a > span {
+    background: #000000 none repeat scroll 0 0;
+    bottom: -24px;
+    color: #ffffff;
+    font-size: 24px;
+    height: 50px;
+    left: 0;
+    line-height: 18px;
+    padding-top: 16px;
+    position: absolute;
+    width: 170px;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+}
+
+.single-event-text > h3 a,
+.single-event-text > h3 {
+    color: #4c4c4c;
+}
+
+    .single-event-text > h3 a:hover,
+    .single-event-text > h3 a:hover {
+        color: #F4A012;
+    }
+
+.single-event-text > h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.single-event-text p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.single-event-text {
+    background: #f6f6f6 none repeat scroll 0 0;
+    padding: 50px 34px 35px;
+    text-align: center;
+}
+
+.single-event-item .single-item-comment-view {
+    margin-bottom: 12px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    display: block;
+    padding: 5px 0;
+}
+
+    .single-event-item .single-item-comment-view span {
+        margin-right: 12px;
+    }
+
+        .single-event-item .single-item-comment-view span:last-child {
+            margin-right: 0;
+        }
+
+.single-event-item .button-default {
+    margin-top: 16px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.single-event-item:hover .button-default {
+    background: #FFAE27;
+    color: #fff;
+}
+
+.single-event-item {
+    box-shadow: 0 0 8px rgba(34, 30, 31, 0.3);
+}
+/*Event Style 2 CSS*/
+
+.event-style-2 .single-event-image a > span {
+    background: #000000 none repeat scroll 0 0;
+    top: 130px;
+    color: #ffffff;
+    font-size: 24px;
+    left: 34px;
+    right: auto;
+    line-height: 18px;
+    position: absolute;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px 0 0 50px;
+    text-align: center;
+    padding: 15px 20px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    width: 130px;
+}
+
+.event-style-2 .single-event-text {
+    text-align: left;
+}
+/*----------------------------------------*/
+
+/*  11. Newsletter Area
+/*----------------------------------------*/
+
+.newsletter-area {
+    background: #000000 none repeat scroll 0 0;
+    color: #ffffff;
+    position: relative;
+    border-bottom: 1px solid #4B5B7D;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+    .newsletter-area:before {
+        height: 148px;
+        left: 0;
+        right: auto;
+        top: -20px;
+        width: 44%;
+    }
+
+    .newsletter-area:after {
+        border-width: 74.5px 40px;
+        left: 44%;
+        right: auto;
+        top: -20px;
+    }
+
+.newsletter-content h2,
+.newsletter-content h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+.subscribe-form input {
+    color: #4c4c4c;
+    height: 100%;
+    padding-left: 15px;
+    width: 100%;
+    border: 0;
+    background-color: #ffff;
+}
+            body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+ 
+}
+
+.contact-info{
+  position: fixed;
+  top: 72%;
+  z-index: 99999;
+  left: 0;
+}
+.option{
+  cursor: pointer;
+  position: relative;
+}
+.option i{
+  display: block;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  background: #fdbe33;
+  color: #b9b9b9;
+  font-size: 20px;
+  transition: 0.6s;
+}
+.option:hover i{
+  color: #121518;
+}
+.text{
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  background:#121518;
+  top: 0;
+  z-index: -1;
+  left: -140px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.option:hover .text{
+  left: 60px;
+}
 
 
+
+.footer123{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #242539;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+    z-index: 1;
+}
+
+.footer123 p{
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+*{
+                        margin: 0;
+                        padding: 0;
+                        font-family: "montserrat",sans-serif;
+                        box-sizing: border-box;
+                      }
+                      
+                      .services-section{
+                        background-image: url(/img/bg.jpg);
+                        background-size: cover;
+                        padding: 60px 0;
+                      }
+                      .inner-width{
+                        width: 100%;
+                        max-width: 1200px;
+                        margin: auto;
+                        padding: 0 20px;
+                        overflow: hidden;
+                      }
+                      .section-title{
+                        text-align: center;
+                        color: #ddd;
+                        text-transform: uppercase;
+                        font-size: 30px;
+                      }
+                      .border{
+                        width: 160px;
+                        height: 2px;
+                        background: #fdbe33;
+                        margin: 40px auto;
+                      }
+                      .services-container{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                      }
+                      
+                      .service-box{
+                        max-width: 33.33%;
+                        padding: 10px;
+                        text-align: center;
+                        color: #ddd;
+                        cursor: pointer;
+                      }
+                      
+                      .service-icon{
+                        display: inline-block;
+                        width: 70px;
+                        height: 70px;
+                        border: 3px solid #fdbe33;
+                        color: #fdbe33;
+                        transform: rotate(45deg);
+                        margin-bottom: 30px;
+                        margin-top: 16px;
+                        transition: 0.3s linear;
+                      }
+                      .service-icon i{
+                        line-height: 70px;
+                        transform: rotate(-45deg);
+                        font-size: 26px;
+                      }
+                      .service-box:hover .service-icon{
+                        background: #fdbe33;
+                        color: #ddd;
+                      }
+                      .service-title{
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                      }
+                      .service-desc{
+                        font-size: 14px;
+                      }
+                      
+                      @media screen and (max-width:960px) {
+                        .service-box{
+                          max-width: 45%;
+                        }
+                      }
+                      
+                      @media screen and (max-width:768px) {
+                        .service-box{
+                          max-width: 50%;
+                        }
+                      }
+                      
+                      @media screen and (max-width:480px) {
+                        .service-box{
+                          max-width: 100%;
+                        }
+                      }
+                      
+
+
+.cources{
+            background-color: #203b67;
+            height:400px;
+            border-radius: 50px;
+            padding-bottom: -250px;
+            
+            background-size: 100% 100%;
+            padding-top:20px;
+
+            }
+            .cources:hover {
+    color: #030f27;
+    background: #fdbe33;
+    border-color: #fdbe33;
+ 
+}
+
+            
+
+
+.down:hover {
+    color: #030f27;
+    background: #fdbe33;
+    border-color: #fdbe33;
+}
+
+
+
+
+            .down{
+               
+                border-radius: 50px;
+                height:270px;
+                background-color:#203b67;
+                background-size: 100% 100%;
+                padding-top:37px;
+            }
+
+
+            .dropbtn {
+              background-color: #04AA6D;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+            }
+            
+        
+         
+            
+            .dropdown-content a {
+              color: black;
+            
+              text-decoration: none;
+              display: block;
+            }
+            
+
+           
+            
+            .dropdown:hover .dropdown-content {display: block;}
 .dropbtn {
               background-color: #04AA6D;
               color: white;
@@ -93,10 +838,13 @@
         }
 
 
-            </style>
-    </head>
 
-    <body>
+        
+
+
+            </style>
+
+
         <div class="wrapper">
             <!-- Top Bar Start -->
             <div class="top-bar">
@@ -105,7 +853,8 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1> <img src="img/logo3.png" height="50px" width="200px"></h1>
+                                <h1> <img src="img/12345.png" alt="Image" height="90px";width="90px;">OUR<span style="color:#fdbe33;">TRADER</span> </h1>
+                              
                                    
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
@@ -158,19 +907,19 @@
             <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand">MENU</a>
+                        <a href="index.php" class="navbar-brand">MENU</a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="index.php" class="nav-item nav-link">Home</a>
                                
 
 
                                 <div class="dropdown">
-                                    <a href="index.html" class="nav-link dropdown-toggle active m" >CLASSROOM COURSES</a>
+                                    <a href="classroomcourses.php" class="nav-link dropdown-toggle active m" >CLASSROOM COURSES</a>
                                     <div class="dropdown-content">
                                         <div class="footer wow fadeIn" style="height:530px;width:1150px;margin-left: -50px;margin-top: 24px;" >
                                             <div class="container">
@@ -179,15 +928,15 @@
                                                         <div class="footer-link">
                                                             <h2>JOB ORIENTED COURSES
                                                             </h2>
-                                                            <a href="AMM.html">ADVANCE DIPLOMA IN STOCK MARKET(ADSM)</a>
-                                                            <a href="DISM.html">DIPLOMA IN STOCK MARKET(DISM)&nbsp;&nbsp;&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="ADSM.php">ADVANCE DIPLOMA IN STOCK MARKET(ADSM)</a>
+                                                            <a href="DISM.php">DIPLOMA IN STOCK MARKET(DISM)&nbsp;&nbsp;&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
                                                             </a>
-                                                            <a href="CCSM.html">CERTIFICATE COURSES IN STOCK MARKET
+                                                            <a href="CCSM.php">CERTIFICATE COURSES IN STOCK MARKET
                                                             </a>
-                                                            <a href="DMM.html">DERIVATIVE MARKET DEALER MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
+                                                            <a href="DMM.php">DERIVATIVE MARKET DEALER MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
                                                             </a>
-                                                            <a href="CMM.html">CAPITAL MARKET MODULE
+                                                            <a href="CMM.php">CAPITAL MARKET MODULE
                                 </a>
                                                         </div>
                                                     </div>
@@ -196,16 +945,16 @@
                                                             <h2>TRADER & INVESTOR COURSES
                                 
                                                             </h2>
-                                                            <a href="AST.html">ADVANCE SMART TRADER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span>
+                                                            <a href="AST.php">ADVANCE SMART TRADER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span>
                                                             </a>
-                                                            <a href="AMM.html">ADVANCE  MARKET MAKER<br>><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span> 
+                                                            <a href="AMM.php">ADVANCE  MARKET MAKER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span> 
                                                             </a>
                                                             </a>
-                                                            <a href="IBP.html">INTERMEDIATE BEGINNER PROGRAM
+                                                            <a href="IBP.php">INTERMEDIATE BEGINNER PROGRAM
                                                             </a>
-                                                            <a href="ATA.html">ADVANCE TECHNICAL ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
+                                                            <a href="TA.php">ADVANCE TECHNICAL ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
                                                             </a>
-                                                            <a href="ADA.html">ADVANCE DERIVATIVE ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="ADA.php">ADVANCE DERIVATIVE ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
                                                             </a>
                                                         </div>
@@ -215,32 +964,32 @@
                                                             <h2>NISM/NCFM COURSES
                                                               
                                                             </h2>
-                                                            <a href="CMM.html">CAPITAL MARKET MODULE
+                                                            <a href="CMM.php">CAPITAL MARKET MODULE
                                                             </a>
-                                                            <a href="DMM.html">DERIVATIVE MARKET MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                                                            </a>
-                                
-                                                            </a>
-                                                            <a href="COMM.html">COMMODITY MARKET MODULE
-                                                            </a>
-                                                            <a href="CUMM.html">CURRENCY MARKET MODULE
-                                                            </a>
-                                                            <a href="OS.html">OPTION STRATEGY
-                                                            </a>
-                                
-                                                            <a href="TA.html">TECHNICAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="DMM.php">DERIVATIVE MARKET MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
                                 
                                                             </a>
-                                                            <a href="FA.html">FUNDAMENTAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="COMM.php">COMMODITY MARKET MODULE
+                                                            </a>
+                                                            <a href="CUMM.php">CURRENCY MARKET MODULE
+                                                            </a>
+                                                            <a href="OS.php">OPTION STRATEGY
                                                             </a>
                                 
-                                                            <a href="RA.html">RESEARCH ANALYST MODULE
+                                                            <a href="TA.php">TECHNICAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
-                                                            <a href="ID.html">INVESTMENT ADVISOR X-A
                                 
                                                             </a>
-                                                            <a href="MFDM.html">MUTUAL FUND DISTRIBUTOR MODULE 5A
+                                                            <a href="FA.php">FUNDAMENTAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                
+                                                            <a href="RA.php">RESEARCH ANALYST MODULE
+                                                            </a>
+                                                            <a href="ID.php">INVESTMENT ADVISOR X-A
+                                
+                                                            </a>
+                                                            <a href="MFDM.php">MUTUAL FUND DISTRIBUTOR MODULE 5A
                                                             </a>
                                                            
                                                            
@@ -252,14 +1001,14 @@
                                                         <div class="footer-link">
                                                             <h2>MENTORSHIP PROGRAME
                                                             </h2>
-                                                            <a href="PRA.html">PROFESSIONAL RESEARCH ANALYST(PRA)&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="PRA.php">PROFESSIONAL RESEARCH ANALYST(PRA)&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
                                                             </a>
-                                                            <a href="ISTS.html">INTRADAY SWING TRADING SYSTEM(ISTS)
+                                                            <a href="ISTS.php">INTRADAY SWING TRADING SYSTEM(ISTS)
                                                             </a>
-                                                            <a href="ETS.html">EQUITY TRADING SYSTEM(ETS)
+                                                            <a href="ETS.php">EQUITY TRADING SYSTEM(ETS)
                                                             </a>
-                                                            <a href="SNB.html">SCALPING(NIFTY/BANKNIFTY)&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            <a href="SNB.php">SCALPING(NIFTY/BANKNIFTY)&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
                                                             </a>
                                                             </a>
                                                             
@@ -284,121 +1033,124 @@
 
 
 
+
 <div class="dropdown">
-    <a href="index.html" class="nav-link dropdown-toggle active m" >ONLINE courses</a>
-    <div class="dropdown-content">
-        <div class="footer wow fadeIn" style="height:530px;width:1150px;margin-left: -230px;margin-top: 24px;" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>JOB ORIENTED COURSES
-                            </h2>
-                            <a href="AMM.html">ADVANCE DIPLOMA IN STOCK MARKET(ADSM)</a>
-                            <a href="DISM.html">DIPLOMA IN STOCK MARKET(DISM)&nbsp;&nbsp;&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-                            </a>
-                            <a href="CCSM.html">CERTIFICATE COURSES IN STOCK MARKET
-                            </a>
-                            <a href="DMM.html">DERIVATIVE MARKET DEALER MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
-                            </a>
-                            <a href="CMM.html">CAPITAL MARKET MODULE
-</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>TRADER & INVESTOR COURSES
+                                    <a href="classroomcourses.php" class="nav-link dropdown-toggle active m" >ONLINE COURSES</a>
+                                    <div class="dropdown-content">
+                                        <div class="footer wow fadeIn" style="height:530px;width:1150px;margin-left: -230px;margin-top: 24px;" >
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <div class="footer-link">
+                                                            <h2>JOB ORIENTED COURSES
+                                                            </h2>
+                                                            <a href="ADSM.php">ADVANCE DIPLOMA IN STOCK MARKET(ADSM)</a>
+                                                            <a href="DISM.php">DIPLOMA IN STOCK MARKET(DISM)&nbsp;&nbsp;&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                                            </a>
+                                                            <a href="CCSM.php">CERTIFICATE COURSES IN STOCK MARKET
+                                                            </a>
+                                                            <a href="DMM.php">DERIVATIVE MARKET DEALER MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
+                                                            </a>
+                                                            <a href="CMM.php">CAPITAL MARKET MODULE
+                                </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <div class="footer-link">
+                                                            <h2>TRADER & INVESTOR COURSES
+                                
+                                                            </h2>
+                                                            <a href="AST.php">ADVANCE SMART TRADER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span>
+                                                            </a>
+                                                            <a href="AMM.php">ADVANCE  MARKET MAKER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                                            </a>
+                                                            <a href="IBP.php">INTERMEDIATE BEGINNER PROGRAM
+                                                            </a>
+                                                            <a href="TA.php">ADVANCE TECHNICAL ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
+                                                            </a>
+                                                            <a href="ADA.php">ADVANCE DERIVATIVE ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <div class="footer-link">
+                                                            <h2>NISM/NCFM COURSES
+                                                              
+                                                            </h2>
+                                                            <a href="CMM.php">CAPITAL MARKET MODULE
+                                                            </a>
+                                                            <a href="DMM.php">DERIVATIVE MARKET MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                
+                                                            </a>
+                                                            <a href="COMM.php">COMMODITY MARKET MODULE
+                                                            </a>
+                                                            <a href="CUMM.php">CURRENCY MARKET MODULE
+                                                            </a>
+                                                            <a href="OS.php">OPTION STRATEGY
+                                                            </a>
+                                
+                                                            <a href="TA.php">TECHNICAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                
+                                                            </a>
+                                                            <a href="FA.php">FUNDAMENTAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                
+                                                            <a href="RA.php">RESEARCH ANALYST MODULE
+                                                            </a>
+                                                            <a href="ID.php">INVESTMENT ADVISOR X-A
+                                
+                                                            </a>
+                                                            <a href="MFDM.php">MUTUAL FUND DISTRIBUTOR MODULE 5A
+                                                            </a>
+                                                           
+                                                           
+                                
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-lg-3">
+                                                        <div class="footer-link">
+                                                            <h2>MENTORSHIP PROGRAME
+                                                            </h2>
+                                                            <a href="PRA.php">PROFESSIONAL RESEARCH ANALYST(PRA)&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                                            </a>
+                                                            <a href="ISTS.php">INTRADAY SWING TRADING SYSTEM(ISTS)
+                                                            </a>
+                                                            <a href="ETS.php">EQUITY TRADING SYSTEM(ETS)
+                                                            </a>
+                                                            <a href="SNB.php">SCALPING(NIFTY/BANKNIFTY)&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
+                                                            </a>
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="container copyright">
+                                                <div class="row">
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
 
-                            </h2>
-                            <a href="AST.html">ADVANCE SMART TRADER<br><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span>
-                            </a>
-                            <a href="AMM.html">ADVANCE  MARKET MAKER<br>><span style = "background-color: red; font-size:9px;color: aliceblue;">Top selling</span> 
-                            </a>
-                            </a>
-                            <a href="IBP.html">INTERMEDIATE BEGINNER PROGRAM
-                            </a>
-                            <a href="ATA.html">ADVANCE TECHNICAL ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span>
-                            </a>
-                            <a href="ADA.html">ADVANCE DERIVATIVE ANALYST&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>NISM/NCFM COURSES
-                              
-                            </h2>
-                            <a href="CMM.html">CAPITAL MARKET MODULE
-                            </a>
-                            <a href="DMM.html">DERIVATIVE MARKET MODULE&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
+<!-- online -->
 
-                            </a>
-                            <a href="COMM.html">COMMODITY MARKET MODULE
-                            </a>
-                            <a href="CUMM.html">CURRENCY MARKET MODULE
-                            </a>
-                            <a href="OS.html">OPTION STRATEGY
-                            </a>
-
-                            <a href="TA.html">TECHNICAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-
-                            </a>
-                            <a href="FA.html">FUNDAMENTAL ANALYST&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-
-                            <a href="RA.html">RESEARCH ANALYST MODULE
-                            </a>
-                            <a href="ID.html">INVESTMENT ADVISOR X-A
-
-                            </a>
-                            <a href="MFDM.html">MUTUAL FUND DISTRIBUTOR MODULE 5A
-                            </a>
-                           
-                           
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-link">
-                            <h2>MENTORSHIP PROGRAME
-                            </h2>
-                            <a href="PRA.html">PROFESSIONAL RESEARCH ANALYST(PRA)&nbsp;&nbsp;<span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-                            </a>
-                            <a href="ISTS.html">INTRADAY SWING TRADING SYSTEM(ISTS)
-                            </a>
-                            <a href="ETS.html">EQUITY TRADING SYSTEM(ETS)
-                            </a>
-                            <a href="SNB.html">SCALPING(NIFTY/BANKNIFTY)&nbsp;&nbsp;<br><span style = " font-size:9px;background-color: red;color: aliceblue;">Top selling</span> 
-                            </a>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="container copyright">
-                <div class="row">
-                  
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-                                <a href="classroomcourses.html" class="nav-item nav-link ms">CLASSROOM COURSES</a> 
-                                <a href="online.html" class="nav-item nav-link ms">ONLINE COURSES</a> 
-                                <a href="portfolio.html" class="nav-item nav-link">PORTFOLIO MANAGEMENT</a>
-                                <a href="service.html" class="nav-item nav-link">EVENTS</a>
-                                <a href="gallery.html" class="nav-item nav-link">GALLERY</a>
-                                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                                <a href="classroomcourses.php" class="nav-item nav-link ms">CLASSROOM COURSES</a> 
+                                <a href="online.php" class="nav-item nav-link ms">ONLINE COURSES</a> 
+                                <a href="portfolio.php" class="nav-item nav-link">PORTFOLIO MANAGEMENT</a>
+                                <a href="events.php" class="nav-item nav-link">EVENTS</a>
+                                <a href="gallery.php" class="nav-item nav-link">GALLERY</a>
+                                <a href="contact.php" class="nav-item nav-link">CONTACT</a>
                           
                             </div>
                             <div class="ml-auto">
@@ -413,6 +1165,9 @@
 
 
 
+
+
+
             <!-- Carousel Start -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -422,7 +1177,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/trad.jpg" alt="Carousel Image">
+                    <img src="img/vidd.gif" alt="Computer man" style="height:600px;width:1400px;" >
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Want to learn
                                 </p>
@@ -504,62 +1259,106 @@
                     </div>
                 </div>
             </div>
+
             
-  <!-- About Start -->
-  <div class="about wow fadeInUp" data-wow-delay="0.1s" style="background-image: url('img/ba.png');">
+            <div class="contact-info">
+    <div class="option">
+      <i  class="fab fa-whatsapp""></i>
+      <div class="text">+91 9716259862</div>
+    </div>
+
+    <div class="option">
+      <i class="far fa-envelope"></i>
+      <div class="text">yourtrader.info@gmail.com</div>
+    </div>
+
+    <div class="option">
+      <i class="fas fa-mobile-alt"></i>
+      <div class="text">+91 9716259862</div>
+    </div>
+  </div>
+
+            <div class="services-section" style="background-image: url('img/bg.jpg');">
+                <div class="inner-width">
+                  <h1 class="section-title" style="color:#fdbe33;">Our Services</h1>
+                 <p style="color:white">Yourtrader Learning is the best platform for those who are willing to make their career in financial market and want to became a full time trader and invester in stock market. The training approach of your trader learning is highly practical, so if you want to make consistant income then join YourTrader Learning.</p>
+                  <div class="border"></div>
+                  <div class="services-container">
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-chalkboard"></i>
+                      </div>
+                      <div class="service-title">Online Live Classes</div>
+                      <div class="service-desc">
+                        We provide live market trading sessions, In which you can talk to the teacher, you can ask any of query question, doubt or anything.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-school"></i>
+                      </div>
+                      <div class="service-title">Classroom Classes</div>
+                      <div class="service-desc">
+                        YTL is the leading stock market trading institute offering begineer courses, Trader courses, Invester courses. Job oriented courses. Traning approach is highly practical and intime with the market.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                      </div>
+                      <div class="service-title">Low Batch Strength</div>
+                      <div class="service-desc">
+                        In order to give individual attention to each student, we prefer small batch with strength of 5 to 10 students.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <div class="service-title">Job Oriented NISM/NCFM Courses</div>
+                      <div class="service-desc">
+                        YLT Institute is the leading institute offers NSE, NISM, NCFM certification courses, if you are willing to make your career in stock market.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                      </div>
+                      <div class="service-title">TRADER & INVESTOR COURSES</div>
+                      <div class="service-desc">
+                      YTL is the leading stock market trading institute offering Invester courses. Traning approach is highly practical and intime with the market.
+                      </div>
+                    </div>
+          
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fab fa-accusoft"></i>
+                      </div>
+                      <div class="service-title">Portfolio Management Services</div>
+                      <div class="service-desc">
+                      PMS or Portfolio Management Service is a professional service where qualified and experienced portfolio managers backed by a research team manage equity portfolios on behalf of clients instead of clients managing themselves
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="about wow fadeInUp" data-wow-delay="0.1s" style="background-color: #c4ecff;">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-5 col-md-6">
-                <div class="about-img">
-                    <img src="img/about.jpg" alt="Image">
-                </div>
-            </div>
-            <div class="col-md-6 pl-md-5 py-md-5">
-                <div class="heading-section pl-md-4 pt-md-5">
-                  <h2 class="mb-4">Welcome To Yourtrader Learning</h2>
-                    <p style="color: #203b67;">Yourtrader Learning is the best platform for those who are willing to make their career in financial market
-                      and want to became a full time trader and invester in stock market. The training approach of your trader learning is highly practical, 
-                      so if you want to make consistant income then join YourTrader Learning.</p>
-          
-                </div>
-                <div class="services-2 w-100 d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tax"></span></div>
-                    <div class="text pl-4">
-                        <h4>Online Live Classes</h4>
-                        <p style="color: #203b67;">We provide live market trading sessions, In which you can talk to the teacher, you can ask any of query question, doubt or anything.</p>
-                    </div>
-                </div>
-                <div class="services-2 w-100 d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-accountant"></span></div>
-                    <div class="text pl-4">
-                        <h4>Classroom Classes</h4>
-                        <p style="color: #203b67;">YTL is the leading stock market trading institute offering begineer courses, Trader courses, Invester courses. Job oriented courses.
-                          Traning approach is highly practical and intime with the market.</p>
-                    </div>
-                </div>
-                <div class="services-2 w-100 d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-loan"></span></div>
-                    <div class="text pl-4">
-                        <h4>Low Batch Strength</h4>
-                        <p style="color: #203b67;">In order to give individual attention to each student, we prefer small batch with strength of 5 to 10 students.</p>
-                    </div>
-                </div>
-                <div class="services-2 w-100 d-flex">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-budget"></span></div>
-                    <div class="text pl-4">
-                        <h4>Job Oriented NISM/NCFM Courses</h4>
-                        <p style="color: #203b67;"> YLT Institute is the leading institute offers NSE, NISM, NCFM certification courses, if 
-              you are willing to make your career in stock market.</p>
-                    </div>
-                </div>
+           
         </div>
             </div>
         </div>
     </div>
 </div>
 <!-- About End -->
-           
-     
 
             <!-- Blog Start -->
             <div class="blog m123">
@@ -1089,7 +1888,79 @@
 </div>
 <!-- Blog End -->
 
-
+<div class="latest-area section-padding bg-white pb-60">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title-wrapper">
+                                    <div class="section-title text-center">
+                                        <div class="heading">
+                                            <h3 id="heading4" style="font-size:32px;font-weight: 700;top-padding:22px;bottom-padding:20px;font-family: Sans-serif;">Our Programs</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="divProgram">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="single-latest-item text-center">
+                                    <div class="single-latest-image prg-icon">
+                                        <img src="img/80.jpg" alt="">
+                                    </div>
+                                    <div class="single-latest-text prog-h">
+                                        <h3>Financial Modeling & Valuations</h3>
+                                        <p>It's the most comprehensive program on Financial Modeling and busines valuations which comes with a 100% placement support on successful completion. Candidates across the Globe undertake this flagsip finance program.</p>
+                                        <a href="financial-modelling-certification-course" class="button-default prg-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="single-latest-item text-center">
+                                    <div class="single-latest-image prg-icon">
+                                        <img src="img/77.jpg" alt="">
+                                    </div>
+                                    <div class="single-latest-text prog-h">
+                                        <h3>CFA<sup>®</sup> Coaching</h3>
+                                        <p>TWSS is an approved Prep Provider of CFA Institute and provides training for all subjects of the CFA<sup>®</sup> Program with a 91% Passing Rate in both classroom and online program.</p>
+                                        <br>
+                                        <br>
+                                        <a href="cfa-coaching-program" class="button-default prg-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="single-latest-item text-center">
+                                    <div class="single-latest-image prg-icon">
+                                        <img src="img/78.png" alt="">
+                                    </div>
+                                    <div class="single-latest-text prog-h">
+                                        <h3>FRM<sup>®</sup> Coaching</h3>
+                                        <p>We're an official Exam Prep Provider of GARP For FRM<sup>®</sup> exam. We deliver training for both the Parts of FRM exam in online and classroom mode, covering each and every topic in the official curriculum.</p>
+                                        <br>
+                                        <br>
+                                        <a href="frm-coaching-program" class="button-default prg-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="single-latest-item text-center">
+                                    <div class="single-latest-image prg-icon">
+                                        <img src="img/79.jpg" alt="">
+                                    </div>
+                                    <div class="single-latest-text prog-h">
+                                        <h3>Stock Market Training Program</h3>
+                                        <p>Practical training for individuals seeking to invest In Stock Markets with their own strategies and not Based On Tips Or Through Mutual Funds.</p>
+                                      
+                                        
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <a href="stock-market-training" class="button-default prg-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</div>
             <!-- Fact Start -->
             <div class="fact">
                 <div class="container-fluid">
@@ -1491,7 +2362,7 @@ We have made more than 2000 students as a professional trader. We do not do any 
                                         <div class="card-body">
                                             You can make the payment either by transferring the funds online to our company account or you can swipe the card. In some cases, you can make the payment in cash.
 
-Yes, we give the facility to our students to pay in Instalments
+Yes, we give the facility to our students to pay in Instalments.
                                         </div>
                                     </div>
                                 </div>
@@ -1572,6 +2443,7 @@ Yes, we give the facility to our students to pay in Instalments
         
 
 
+            
             <!-- Footer Start -->
             <div class="footer wow fadeIn" data-wow-delay="0.3s">
                 <div class="container">
@@ -1581,11 +2453,11 @@ Yes, we give the facility to our students to pay in Instalments
                                 <h2>Office Contact</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>G-73A, Opposite Ansal Plaza Mall
                                     Gurugram - 122017</p>
-                                <p><i class="fa fa-phone-alt"></i>+91 9650923568</p>
-                                <p><i class="fa fa-envelope"></i>yourtrader.info@gmail.com</p>
+                                <p><i class="fa fa-phone-alt"></i>+91 9871661835,<br>&nbsp; +91 9716259862</p>
+                                <p><i class="fa fa-envelope"></i>yourtrader.info@gmail.com, connect@intellaeducation.com</p>
                                 <div class="footer-social">
                                     <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.facebook.com/266741237020973/"><i class="fab fa-facebook-f"></i></a>
                                     <a href=""><i class="fab fa-youtube"></i></a>
                                     <a href=""><i class="fab fa-instagram"></i></a>
                                     <a href=""><i class="fab fa-linkedin-in"></i></a>
@@ -1595,32 +2467,31 @@ Yes, we give the facility to our students to pay in Instalments
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Services Areas</h2>
-                                <a href="">Website design</a>
-                                <a href="">digital marketing</a>
-                                <a href="">business analying</a>
-                                <a href="">building startups</a>
-                                <a href="">Posters, videos and graphics for company</a>
+                                <a href="">Classroom Courses</a>
+                                <a href="">Online Courses</a>
+                                <a href="">Portfolio Management </a>
+                    
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Contact Us</a>
-                                <a href="">Our Team</a>
-                                <a href="">Projects</a>
-                                <a href="">Testimonial</a>
+                                <a href="events.html">Events</a>
+                                <a href="contact.html">Contact Us</a>
+                                <a href="gallery.html">Gallery</a>
+                              
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="newsletter">
-                                <h2>Newsletter</h2>
+                                <h2>Your Trader Learning</h2>
                                 <p>
-                                    WowHub is setting a new benchmark for other companies.
+                                    Yourtrader Learning is the best platform for those who are willing to make their career in financial market
+                                    and want to became a full time trader and invester in stock market. 
                                 </p>
                                 <div class="form">
-                                    <input class="form-control" placeholder="Email here">
-                                    <button class="btn">Submit</button>
+                                   <a href="index.html"><img src="img/Telegram.png" alt="Image" height="120px";width="120px;"></a>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -1641,7 +2512,7 @@ Yes, we give the facility to our students to pay in Instalments
                             <p>&copy; <a href="#">Intella Education (P) Ltd</a>, All Right Reserved.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Designed By <a href="https://htmlcodex.com">Team Intella</a></p>
+                            <p>Designed By <a href="#">Team Intella</a></p>
                         </div>
                     </div>
                 </div>
@@ -1650,6 +2521,10 @@ Yes, we give the facility to our students to pay in Instalments
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
+
+<br>
+<br>
+
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -1665,5 +2540,12 @@ Yes, we give the facility to our students to pay in Instalments
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
     </body>
 </html>
+
+   
+
+
+
+
